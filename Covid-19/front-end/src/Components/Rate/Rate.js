@@ -20,7 +20,7 @@ const Rate = () => {
         }
 
         axios
-            .post('http://localhost:3001/api/blogs', noteObject)
+            .post('http://localhost:3001/api/feedbacks', noteObject)
             .then(response => {
                 setNewNote('')
                 setValue(0)
