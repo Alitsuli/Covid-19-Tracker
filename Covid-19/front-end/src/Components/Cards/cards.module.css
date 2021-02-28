@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.tartunnat{
+    border-bottom: 30px solid rgba(208, 67, 67, 1);
+}
+
+.parantuneet{
+    border-bottom: 30px solid rgba(0, 255, 0, 0.5);
+}
+
+.kuolemat{
+    border-bottom: 30px solid rgba(13, 13, 13, 1);
+}
