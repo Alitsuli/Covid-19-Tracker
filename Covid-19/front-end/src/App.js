@@ -3,6 +3,7 @@ import { Toggle } from './Components/Theme/Toggle';
 import { useDarkMode } from './Components/Theme/useDarkMode';
 import { GlobalStyles, lightTheme, darkTheme } from './Components/Theme/globalStyles';
 import { ThemeProvider } from 'styled-components';
+import LineDiagram from './Components/LineDiagram/lineDiagram';
 
 import Cards from './Components/Cards/cards';
 
@@ -16,6 +17,7 @@ function App() {
       <GlobalStyles />
       <Toggle theme={theme} toggleTheme={toggleTheme} />
       <Cards />
+      <LineDiagram />
     </ThemeProvider>
   );
 }
