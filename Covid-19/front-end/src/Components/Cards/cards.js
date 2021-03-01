@@ -10,14 +10,15 @@ const Cards = (props) => {
         totalConfirmed,
         totalRecovered,
         totalDeaths,
-        totaldate
+        totaldate,
+        country
     } = props;
 
 
     return (
         <div>
             <div style={{ display: 'flex', justifyContent: 'center' }}>
-                <h1 >Maailma</h1>
+                <h1 style={{ textTransform: 'capitalize' }}>{country === '' ? 'Maailma' : country}</h1>
             </div>
             <Grid container spacing={5} justify="center">
                 <Grid item component={Card} xs={12} md={3} className={cx(style.card, style.tartunnat)}>

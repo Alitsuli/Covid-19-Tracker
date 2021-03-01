@@ -5,7 +5,7 @@ const LineDiagram = (props) => {
     return (
         <div style={{ width: '1000px', height: '400px', margin: '30px auto' }}>
             <Line data={{
-                labels: [],
+                labels: props.label.map(l => l.substr(0, 10)),
                 datasets: [
                     {
                         label: 'Tartunnan',
@@ -26,7 +26,7 @@ const LineDiagram = (props) => {
                         pointHoverBorderWidth: 2,
                         pointRadius: 1,
                         pointHitRadius: 10,
-                        data: []
+                        data: props.yAxis
                     }
                 ]
             }} />
